@@ -7,7 +7,7 @@
   border: transparent;
   border-radius: $borderRadius;
   letter-spacing: $letterSpacing;
-  padding: 0.375rem 0.75rem;
+  padding: 0.75rem 1.5rem;
   box-shadow:$shadow-1;
   transition:$transition;
   text-transform: capitalize;
@@ -29,7 +29,7 @@
 
     &:hover {
       color: $buttonColor;
-      background: $primary-500;
+      background: $grey-500;
     }
   }
 

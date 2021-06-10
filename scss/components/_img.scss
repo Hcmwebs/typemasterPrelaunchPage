@@ -2,15 +2,20 @@
 
 
 /* images */
+
+.logoContainer{
+  width: 40px;
+  height: 40px;
+  @include grid(center);
+}
 .imgContainer {
   width: 40vw;
   max-width:$maxWidth;
   // border: 5px solid $primary-500;
   border-radius:$borderRadius;
-
-  .img{
+}
+.img{
     width: 100%;
     display: block;
     object-fit: cover;
   }
-}
