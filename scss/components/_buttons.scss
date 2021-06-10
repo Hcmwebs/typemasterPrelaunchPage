@@ -1,0 +1,39 @@
+@use'../abstracts'as *;
+/* buttons */
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: $bold;
+  border: transparent;
+  border-radius: $borderRadius;
+  letter-spacing: $letterSpacing;
+  padding: 0.375rem 0.75rem;
+  box-shadow:$shadow-1;
+  transition:$transition;
+  text-transform: capitalize;
+  display: inline-block;
+
+  &--primary{
+    color: $buttonColor;
+    background: $primary-500;
+
+    &:hover {
+      background: $primary-400;
+      box-shadow: $shadow-3;
+    }
+  }
+
+  &--secondary {
+    color: $grey-500;
+    background: $grey-300;
+
+    &:hover {
+      color: $buttonColor;
+      background: $primary-500;
+    }
+  }
+
+  &--block {
+    width: 100%;
+  } /*block class is good with forms*/
+}
