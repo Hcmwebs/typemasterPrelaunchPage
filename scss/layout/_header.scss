@@ -4,4 +4,5 @@
 .header{
   width: 100%;
   @include grid(center);
+  gap: 1.5rem;
 }

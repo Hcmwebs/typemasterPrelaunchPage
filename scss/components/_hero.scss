@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.hero{
+  width: 100%;
+  @include grid(center);
+  margin-top: 3rem;
+
+  &__header{
+    width: 100%;
+    @include grid(center);
+    gap: 2rem;
+
+    h1{
+      font-size: 48px;
+      line-height: 48px;
+      margin: 0;
+    }
+
+    p{
+      text-align: left;
+      margin: 0;
+    }
+
+    &__btns{
+      width: 100%;
+      @include flex(row,space-between,center);
+
+      p{
+        font-size: 1rem;
+        font-weight: $bold;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+  &__body{
+
+  }
+
+
+
+}
