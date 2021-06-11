@@ -4,6 +4,7 @@
   width: 100%;
   @include grid(center);
   margin-top: 3rem;
+  gap:4rem;
 
   &__header{
     width: 100%;
@@ -36,6 +37,19 @@
   }
 
   &__body{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+
+    &:after{
+      content: "";
+      width: 372px;
+      height: 330px;
+      border-radius: $borderRadius-2;
+      background: url(/images/mobile/image-keyboard.jpg) no-repeat center center/cover;
+      position: absolute;
+    }
 
   }
 

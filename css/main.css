@@ -137,6 +137,7 @@ ul {
   display: grid;
   place-items: center;
   margin-top: 3rem;
+  gap: 4rem;
 }
 .hero__header {
   width: 100%;
@@ -166,6 +167,21 @@ ul {
   margin: 0;
   text-transform: uppercase;
 }
+.hero__body {
+  width: 100%;
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+}
+.hero__body:after {
+  content: "";
+  width: 372px;
+  height: 330px;
+  border-radius: 20px;
+  background: url(/images/mobile/image-keyboard.jpg) no-repeat center center/cover;
+  position: absolute;
+}
+
 .header {
   width: 100%;
   display: grid;
