@@ -1,0 +1,65 @@
+@use '../abstracts' as *;
+
+.section{
+  width: 100%;
+
+  &--one{
+    width: 375px;
+    @include flex(column,center,center);
+    gap: 5rem;
+    overflow: hidden;
+
+
+    &__header{
+      width: 100%;
+      height: 193px;
+      @include flex(row,space-between,center);
+      gap:1.5rem;
+      transform:translateX(-1.5rem);
+      position: relative;
+
+      &::before,
+      &::after{
+        content:'';
+        height: 100%;
+        position: absolute;
+      }
+
+      &::before{
+        width: 129px;
+        height: 100%;
+        border-top-right-radius: $borderRadius-2;
+        border-bottom-right-radius: $borderRadius-2;
+        background:url(/images/mobile/image-phone-and-keyboard.jpg) no-repeat center center/cover;
+        background-color: $primary-500;
+        background-blend-mode: multiply;
+
+      }
+
+      &::after{
+        width: 220px;
+        height: 100%;
+        right: 0;
+        border-radius: $borderRadius-2;
+        background: url(/images/mobile/image-glass-and-keyboard.jpg)no-repeat center center/cover;
+      }
+
+    }
+    &__body{
+      width: 100%;
+      max-width:$fixedWidth;
+      padding: 0 2rem;
+      text-align: center;
+      @include flex(column,center,center);
+
+    }
+
+  }
+
+  &--two{
+    @include grid(center);
+    grid-template-columns: repeat (auto-fit, minmax(300px,1fr));
+    border:4px solid blue
+
+  }
+}
