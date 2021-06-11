@@ -39,20 +39,22 @@
   &__body{
     width: 100%;
     height: 330px;
+    
     position: relative;
+    transform:translateX(1.5rem);
     overflow: hidden;
 
     &:after{
       content: "";
       width: 372px;
-      height: 330px;
+      height: 331px;
       border-radius: $borderRadius-2;
       background: url(/images/mobile/image-keyboard.jpg) no-repeat center center/cover;
       position: absolute;
+
     }
 
   }
-
 
 
 }
