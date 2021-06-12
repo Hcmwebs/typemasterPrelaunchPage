@@ -301,6 +301,11 @@ ul {
   gap: 2rem;
 }
 
+.footer {
+  display: grid;
+  place-items: center;
+}
+
 *,
 ::after,
 ::before {
@@ -310,6 +315,7 @@ ul {
 .container {
   width: 100%;
   max-width: 1440px;
+  margin: 2rem auto;
   display: grid;
   place-items: center;
   gap: 2rem;
