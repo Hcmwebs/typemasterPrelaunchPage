@@ -8,6 +8,7 @@
 
   &__header{
     width: 100%;
+    max-width:$fixedWidth*.75;
     @include grid(center);
     gap: 2rem;
 
@@ -39,7 +40,7 @@
   &__body{
     width: 100%;
     height: 330px;
-    
+
     position: relative;
     transform:translateX(1.5rem);
     overflow: hidden;

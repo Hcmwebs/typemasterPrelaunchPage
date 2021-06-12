@@ -141,6 +141,7 @@ ul {
 }
 .hero__header {
   width: 100%;
+  max-width: 450px;
   display: grid;
   place-items: center;
   gap: 2rem;
