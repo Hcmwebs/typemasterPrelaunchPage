@@ -305,9 +305,9 @@ ul {
 
 .header {
   width: 100%;
+  padding: 1.5rem 0;
   display: grid;
   place-items: center;
-  padding: 1.5rem;
   gap: 1.5rem;
 }
 
@@ -330,9 +330,8 @@ ul {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1440px;
-  margin: 2rem auto;
   display: grid;
   place-items: center;
   gap: 2rem;
