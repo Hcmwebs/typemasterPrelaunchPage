@@ -105,7 +105,7 @@ ul {
 }
 
 .nav {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -144,7 +144,7 @@ ul {
   overflow: hidden;
 }
 .hero__header {
-  width: 100%;
+  width: 90%;
   max-width: 339px;
   display: grid;
   place-items: center;
@@ -173,9 +173,11 @@ ul {
   text-transform: uppercase;
 }
 .hero__body {
-  width: 100%;
+  width: 372px;
   height: 330px;
   border-radius: 1rem;
+  transform: translateX(1.5rem);
+  position: relative;
   overflow: hidden;
 }
 .hero__body:after {
@@ -190,6 +192,9 @@ ul {
   .hero {
     flex-direction: row;
     position: relative;
+  }
+  .hero__header {
+    margin-left: 1.5rem;
   }
   .hero__body {
     width: 478px;
@@ -330,7 +335,7 @@ ul {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1440px;
   display: grid;
   place-items: center;

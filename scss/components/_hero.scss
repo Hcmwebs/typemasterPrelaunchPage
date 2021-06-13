@@ -9,7 +9,7 @@
   overflow: hidden;
 
   &__header {
-    width: 100%;
+    width: 90%;
     max-width: 339px;
     @include grid(center);
     gap: 2rem;
@@ -39,9 +39,11 @@
   }
 
   &__body {
-    width: 100%;
+    width: 372px;
     height: 330px;
     border-radius: $borderRadius-2;
+    transform: translateX(1.5rem);
+    position: relative;
     overflow: hidden;
 
     &:after {
@@ -59,9 +61,15 @@
     flex-direction: row;
     position: relative;
 
+    &__header{
+      margin-left: 1.5rem;
+    }
+
     &__body {
       width: 478px;
       height: 425px;
+
+
 
       &::after {
         width: 478px;
