@@ -1,5 +1,5 @@
 @use '../abstracts' as *;
-.nav{
+.nav {
   width: 100%;
-  @include flex(row,space-between,center)
+  @include flex(row, space-between, center);
 }

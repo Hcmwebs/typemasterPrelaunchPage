@@ -134,14 +134,18 @@ ul {
 
 .hero {
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 3rem;
   gap: 4rem;
+  position: relative;
+  overflow: hidden;
 }
 .hero__header {
   width: 100%;
-  max-width: 450px;
+  max-width: 339px;
   display: grid;
   place-items: center;
   gap: 2rem;
@@ -171,19 +175,32 @@ ul {
 .hero__body {
   width: 100%;
   height: 330px;
-  position: relative;
-  transform: translateX(1.5rem);
+  border-radius: 1rem;
   overflow: hidden;
 }
 .hero__body:after {
   content: "";
   width: 372px;
-  height: 331px;
-  border-radius: 1rem;
+  height: 100%;
   background: url(/images/mobile/image-keyboard.jpg) no-repeat center center/cover;
   position: absolute;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    position: relative;
+  }
+  .hero__body {
+    width: 478px;
+    height: 425px;
+  }
+  .hero__body::after {
+    width: 478px;
+    height: 425px;
+    background: url(/images/tablet/image-keyboard.jpg) no-repeat center center/cover;
+  }
+}
 .section {
   width: 100%;
   gap: 2rem;

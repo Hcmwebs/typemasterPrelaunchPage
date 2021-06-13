@@ -1,61 +1,74 @@
 @use '../abstracts' as *;
 
-.hero{
+.hero {
   width: 100%;
-  @include grid(center);
+  @include flex(column, space-between, center);
   margin-top: 3rem;
-  gap:4rem;
+  gap: 4rem;
+  position: relative;
+  overflow: hidden;
 
-  &__header{
+  &__header {
     width: 100%;
-    max-width:$fixedWidth*.75;
+    max-width: 339px;
     @include grid(center);
     gap: 2rem;
 
-    h1{
+    h1 {
       font-size: 48px;
       line-height: 48px;
       margin: 0;
     }
 
-    p{
+    p {
       text-align: left;
       margin: 0;
     }
 
-    &__btns{
+    &__btns {
       width: 100%;
-      @include flex(row,space-between,center);
+      @include flex(row, space-between, center);
 
-      p{
+      p {
         font-size: 1rem;
         font-weight: $bold;
         margin: 0;
         text-transform: uppercase;
       }
     }
-
   }
 
-  &__body{
+  &__body {
     width: 100%;
     height: 330px;
-
-    position: relative;
-    transform:translateX(1.5rem);
+    border-radius: $borderRadius-2;
     overflow: hidden;
 
-    &:after{
-      content: "";
+    &:after {
+      content: '';
       width: 372px;
-      height: 331px;
-      border-radius: $borderRadius-2;
-      background: url(/images/mobile/image-keyboard.jpg) no-repeat center center/cover;
+      height: 100%;
+      background: url(/images/mobile/image-keyboard.jpg) no-repeat center
+        center/cover;
       position: absolute;
-
     }
-
   }
+}
+@media (min-width: $tablets) {
+  .hero {
+    flex-direction: row;
+    position: relative;
 
+    &__body {
+      width: 478px;
+      height: 425px;
 
+      &::after {
+        width: 478px;
+        height: 425px;
+        background: url(/images/tablet/image-keyboard.jpg) no-repeat center
+          center/cover;
+      }
+    }
+  }
 }
