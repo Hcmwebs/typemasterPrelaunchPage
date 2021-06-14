@@ -56,6 +56,7 @@
     }
   }
 }
+
 @media (min-width: $tablets) {
   .hero {
     flex-direction: row;
@@ -75,6 +76,36 @@
         width: 478px;
         height: 425px;
         background: url(/images/tablet/image-keyboard.jpg) no-repeat center
+          center/cover;
+      }
+    }
+  }
+}
+
+@media (min-width: $largeScreens) {
+  .nav{
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+
+    &__header{
+      max-width: 445px;
+      height: 312px;
+      margin:0;
+    }
+
+    &__body {
+      width: 540px;
+      height: 480px;
+      transform: translateX(0);
+
+
+
+      &::after {
+        width: 540px;
+        height: 480px;
+        background: url(/images/desktop/image-keyboard.jpg) no-repeat center
           center/cover;
       }
     }

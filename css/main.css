@@ -122,7 +122,7 @@ ul {
 
 .imgContainer {
   width: 40vw;
-  max-width: 1440px;
+  max-width: 1110px;
   border-radius: 0.5rem;
 }
 
@@ -204,6 +204,30 @@ ul {
     width: 478px;
     height: 425px;
     background: url(/images/tablet/image-keyboard.jpg) no-repeat center center/cover;
+  }
+}
+@media (min-width: 1440px) {
+  .nav {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+  .hero__header {
+    max-width: 445px;
+    height: 312px;
+    margin: 0;
+  }
+  .hero__body {
+    width: 540px;
+    height: 480px;
+    transform: translateX(0);
+  }
+  .hero__body::after {
+    width: 540px;
+    height: 480px;
+    background: url(/images/desktop/image-keyboard.jpg) no-repeat center center/cover;
   }
 }
 .section {
@@ -336,7 +360,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1110px;
   display: grid;
   place-items: center;
   gap: 2rem;
