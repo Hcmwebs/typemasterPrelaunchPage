@@ -3,7 +3,6 @@
 .hero {
   width: 100%;
   @include flex(column, space-between, center);
-  margin-top: 3rem;
   gap: 4rem;
   position: relative;
   overflow: hidden;
