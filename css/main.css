@@ -366,6 +366,26 @@ ul {
     max-width: 50%;
     margin: 0;
   }
+
+  .section--two {
+    min-height: 650px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .section--two .card {
+    width: 335px;
+  }
+  .section--two .card__header .imgContainer {
+    justify-self: start;
+  }
+  .section--two .card__body {
+    text-align: left;
+  }
+  .section--two .card__body h3 {
+    margin: 0;
+  }
+  .section--two .card__body p {
+    max-width: 281px;
+  }
 }
 @media (min-width: 1440px) {
   .section--one {

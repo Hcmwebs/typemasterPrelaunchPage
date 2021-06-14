@@ -151,6 +151,34 @@
 
   }
 
+  .section--two{
+    min-height: 650px;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+
+    .card{
+      width: 335px;
+
+
+      &__header{
+
+        .imgContainer{
+          justify-self: start;
+        }
+      }
+      &__body{
+        text-align: left;
+
+        h3{
+          margin: 0;
+        }
+        p{
+          max-width:281px;
+        }
+
+      }
+    }
+  }
+
 }
 
 @media (min-width: $largeScreens){
