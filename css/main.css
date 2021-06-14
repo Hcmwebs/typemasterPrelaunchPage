@@ -138,7 +138,6 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
   gap: 4rem;
   position: relative;
   overflow: hidden;
@@ -337,7 +336,7 @@ ul {
   padding: 1.5rem 0;
   display: grid;
   place-items: center;
-  gap: 1.5rem;
+  gap: 4rem;
 }
 
 .main {
