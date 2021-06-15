@@ -288,7 +288,7 @@ ul {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: 2rem;
+  gap: 1.25rem;
 }
 .section--two .card {
   width: 327px;
@@ -415,6 +415,13 @@ ul {
   }
   .section--one__body p {
     max-width: 100%;
+  }
+
+  .section--two {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .section--two .card {
+    max-width: 255px;
   }
 }
 .header {

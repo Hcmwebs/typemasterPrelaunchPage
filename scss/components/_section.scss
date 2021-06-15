@@ -60,7 +60,7 @@
     padding: 2rem 0;
     @include grid(center);
     grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
-    gap: 2rem;
+    gap: 1.25rem;
 
 
 
@@ -212,6 +212,15 @@
 
     }
 
+  }
+
+  .section--two{
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+
+
+    .card{
+      max-width:$fixedWidth-2;
+    }
   }
 
 }
