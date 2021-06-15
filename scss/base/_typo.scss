@@ -76,17 +76,32 @@ ul{
 
 @media (min-width: $largeScreens){
   body{
+    margin:auto;
+    max-width:$maxWidth;
     position:relative;
+    overflow: hidden;
 
 
     &:before,
     &::after{
       content: '';
       width: 255px;
-      height: 255px;
+      height: 240px;
       position: absolute;
-      background-color: $grey-300;
-      
+      background:url(/images/shared/pattern-square.svg);
+
+    }
+    &:before{
+      top:13%;
+      right:-20rem;
+      transform: translateY(-50%);
+
+    }
+    &::after{
+
+      bottom:34%;
+      left:-20rem;
+      transform: translateY(-50%);
 
     }
   }

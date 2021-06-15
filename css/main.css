@@ -72,14 +72,27 @@ ul {
 
 @media (min-width: 1440px) {
   body {
+    margin: auto;
+    max-width: 1110px;
     position: relative;
+    overflow: hidden;
   }
   body:before, body::after {
     content: "";
     width: 255px;
-    height: 255px;
+    height: 240px;
     position: absolute;
-    background-color: #e8eff2;
+    background: url(/images/shared/pattern-square.svg);
+  }
+  body:before {
+    top: 13%;
+    right: -20rem;
+    transform: translateY(-50%);
+  }
+  body::after {
+    bottom: 34%;
+    left: -20rem;
+    transform: translateY(-50%);
   }
 }
 /* buttons */
