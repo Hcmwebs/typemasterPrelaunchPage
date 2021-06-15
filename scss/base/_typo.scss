@@ -8,14 +8,12 @@
 html {font-size: 100%;} /*16px*/
 
 body {
-  min-height:100vh;
   @include grid(center);
   background:$backgroundColor;
   font-family: $bodyFont;
   font-weight: $medium;
   line-height: 1.75;
   color:$paragraphColor;
-  position: relative;
 }
 
 
@@ -73,36 +71,4 @@ a{
 ul{
   list-style-type: none;
   padding: 0;
-}
-
-@media (min-width: $largeScreens){
-  body{
-    margin:auto;
-    max-width:$maxWidth;
-    position:relative;
-
-
-    &:before,
-    &::after{
-      content: '';
-      width: 255px;
-      height: 240px;
-      position: absolute;
-      background:url(/images/shared/pattern-square.svg);
-
-    }
-    &:before{
-      top:13%;
-      right:-20rem;
-      transform: translateY(-50%);
-
-    }
-    &::after{
-
-      bottom:34%;
-      left:-20rem;
-      transform: translateY(-50%);
-
-    }
-  }
 }
