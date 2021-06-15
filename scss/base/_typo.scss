@@ -8,6 +8,7 @@
 html {font-size: 100%;} /*16px*/
 
 body {
+  min-height:100vh;
   @include grid(center);
   background:$backgroundColor;
   font-family: $bodyFont;
@@ -79,7 +80,6 @@ ul{
     margin:auto;
     max-width:$maxWidth;
     position:relative;
-    overflow: hidden;
 
 
     &:before,
