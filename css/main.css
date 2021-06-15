@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: #7b8bad;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +70,18 @@ ul {
   padding: 0;
 }
 
+@media (min-width: 1440px) {
+  body {
+    position: relative;
+  }
+  body:before, body::after {
+    content: "";
+    width: 255px;
+    height: 255px;
+    position: absolute;
+    background-color: #e8eff2;
+  }
+}
 /* buttons */
 .btn {
   cursor: pointer;
