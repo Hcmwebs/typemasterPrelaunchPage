@@ -8,12 +8,14 @@
 html {font-size: 100%;} /*16px*/
 
 body {
+  max-width:1440px;
   @include grid(center);
   background:$backgroundColor;
   font-family: $bodyFont;
   font-weight: $medium;
   line-height: 1.75;
   color:$paragraphColor;
+  overflow-x: hidden;
 }
 
 

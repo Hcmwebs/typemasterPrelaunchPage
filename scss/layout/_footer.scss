@@ -1,4 +1,14 @@
 @use '../abstracts' as * ;
 .footer{
+  margin-bottom:2rem;
   @include grid(center);
+
+
+  .attributions{
+    a{
+      color:$headingColor;
+    }
+
+
+  }
 }
