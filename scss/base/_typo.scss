@@ -9,6 +9,7 @@ html {font-size: 100%;} /*16px*/
 
 body {
   max-width:1440px;
+  margin:auto;
   @include grid(center);
   background:$backgroundColor;
   font-family: $bodyFont;
