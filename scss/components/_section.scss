@@ -31,18 +31,18 @@
         height: 100%;
         border-top-right-radius: $borderRadius-3;
         border-bottom-right-radius: $borderRadius-3;
-        background:url(/images/mobile/image-phone-and-keyboard.jpg) no-repeat center center/cover;
+        background:url(/images/mobile-image-phone-and-keyboard.jpg) no-repeat center center/cover;
         background-color: $primary-500;
         background-blend-mode: multiply;
 
       }
 
-      &::after{
+      &::after{ s
         width: 220px;
         height: 100%;
         right: 0;
         border-radius: $borderRadius-3;
-        background: url(/images/mobile/image-glass-and-keyboard.jpg)no-repeat center center/cover;
+        background: url(/images/mobile-image-glass-and-keyboard.jpg)no-repeat center center/cover;
       }
 
     }
@@ -123,13 +123,13 @@
       &:before{
         width:214px;
         border-radius: $borderRadius-3;
-        background:url(/images/tablet/image-phone-and-keyboard.jpg) no-repeat center center/cover;
+        background:url(/images/tablet-image-phone-and-keyboard.jpg) no-repeat center center/cover;
         background-color: $primary-500;
         background-blend-mode: multiply;
       }
       &:after{
         width: 445px;
-        background: url(/images/tablet/image-glass-and-keyboard.jpg)no-repeat center center/cover;
+        background: url(/images/tablet-image-glass-and-keyboard.jpg)no-repeat center center/cover;
       }
     }
 
@@ -196,13 +196,13 @@
 
       &:before{
         width:255px;
-        background:url(/images/desktop/image-phone-and-keyboard.jpg) no-repeat center center/cover;
+        background:url(/images/desktop-image-phone-and-keyboard.jpg) no-repeat center center/cover;
         background-color: $primary-500;
         background-blend-mode: multiply;
       }
       &:after{
         width: 445px;
-        background: url(/images/desktop/image-glass-and-keyboard.jpg) no-repeat center center/cover;
+        background: url(/images/desktop-image-glass-and-keyboard.jpg) no-repeat center center/cover;
       }
     }
 
